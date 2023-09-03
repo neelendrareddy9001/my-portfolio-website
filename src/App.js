@@ -1,9 +1,12 @@
-import "./App.css";
+// import Styles
+import "./App.scss";
+
+import Home from "./component/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello Neelendrareddy</h1>
+      <Home />
     </div>
   );
 }
