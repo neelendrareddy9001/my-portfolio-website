@@ -1,5 +1,5 @@
 import React from "react";
-import "./Navbar.scss";
+import "./_navbar.scss";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,11 +10,21 @@ const Navbar = () => {
           Neelendrareddy
         </a>
         <ul className="ul_menu_section">
-          <li>Home</li>
-          <li>About</li>
-          <li>Project</li>
-          <li>cv</li>
-          <li>Contact</li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/">About</a>
+          </li>
+          <li>
+            <a href="/">Project</a>
+          </li>
+          <li>
+            <a href="/">Cv</a>
+          </li>
+          <li>
+            <a href="/">Project</a>
+          </li>
         </ul>
       </nav>
     </>

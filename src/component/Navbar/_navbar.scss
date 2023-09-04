@@ -1,0 +1,27 @@
+@import "../styles/media.scss";
+
+.nav_section {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+}
+.icon_section {
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin: 0 2.4rem;
+  font-weight: 600;
+}
+
+.ul_menu_section {
+  list-style: none;
+  display: flex;
+  margin: 0 12rem;
+}
+.ul_menu_section li a {
+  text-decoration: none;
+}
+.ul_menu_section li {
+  padding: 18px 20px;
+}
