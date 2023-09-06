@@ -1,6 +1,10 @@
 @import "../../styles/media\ .scss";
 .nav_section {
-  background-color: blueviolet;
+  background: linear-gradient(
+    90deg,
+    rgba(1, 230, 203, 1) 30%,
+    rgba(86, 213, 132, 1) 82%
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;

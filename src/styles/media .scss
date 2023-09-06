@@ -1,0 +1,31 @@
+@import "./globalStyle.scss";
+
+/* XS */
+@media (min-width: 475px) {
+}
+
+/* SM */
+@media (min-width: 640px) {
+  body .ul_menu_section {
+    width: 100vw;
+  }
+}
+
+/* MD */
+@media (min-width: 768px) {
+  .ul_menu_section {
+    display: none;
+  }
+}
+
+/* LG */
+@media (min-width: 1024px) {
+}
+
+/* XL */
+@media (min-width: 1280px) {
+}
+
+/* 2XL */
+@media (min-width: 1536px) {
+}
