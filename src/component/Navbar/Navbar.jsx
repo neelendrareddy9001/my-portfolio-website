@@ -1,6 +1,7 @@
 import React from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   return (
@@ -26,6 +27,7 @@ const Navbar = () => {
             <a href="/">Project</a>
           </li>
         </ul>
+        <RxHamburgerMenu size={38} className="nav_icon" />
       </nav>
     </>
   );

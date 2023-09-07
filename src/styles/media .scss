@@ -1,31 +1,43 @@
 @import "./globalStyle.scss";
 
 /* XS */
-@media (min-width: 475px) {
+@mixin xs {
+  @media (min-width: 475px) {
+    @content;
+  }
 }
 
 /* SM */
-@media (min-width: 640px) {
-  body .ul_menu_section {
-    width: 100vw;
+@mixin sm {
+  @media (min-width: 640px) {
+    @content;
   }
 }
 
 /* MD */
-@media (min-width: 768px) {
-  .ul_menu_section {
-    display: none;
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
   }
 }
 
 /* LG */
-@media (min-width: 1024px) {
+@mixin lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
 }
 
 /* XL */
-@media (min-width: 1280px) {
+@mixin xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
 }
 
 /* 2XL */
-@media (min-width: 1536px) {
+@mixin xxl {
+  @media (min-width: 1536px) {
+    @content;
+  }
 }
