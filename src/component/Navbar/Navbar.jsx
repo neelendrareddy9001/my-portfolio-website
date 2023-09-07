@@ -1,13 +1,13 @@
 import React from "react";
 import "./navbar.scss";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
   return (
     <>
       <nav className="nav_section" id="nav_section">
-        <a className="icon_section" id="icon_section">
+        <a href="/" className="icon_section" id="icon_section">
           Neelendrareddy
         </a>
         <ul className="ul_menu_section">
