@@ -10,11 +10,7 @@
   justify-content: space-between;
   align-items: center;
   height: 3.5rem;
-  @include lg {
-    .nav_section .ul_menu_section {
-      display: block;
-    }
-  }
+
   .icon_section {
     font-size: 1.4rem;
     text-decoration: none;
@@ -27,13 +23,7 @@
     display: flex;
     margin: 0 12rem;
     position: relative;
-    @include md {
-      display: none;
-      .nav_icon {
-        display: block;
-        position: absolute;
-      }
-    }
+
     li {
       padding: 18px 20px;
     }
