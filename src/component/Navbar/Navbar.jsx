@@ -1,12 +1,18 @@
-import React from "react";
 import "./navbar.scss";
-// import { Link } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
+
+import { Link } from "react-router-dom";
+
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Navbar = () => {
   return (
     <>
-      <nav className="nav_section" id="nav_section">
+      {/* <nav className="nav_section" id="nav_section">
         <a href="/" className="icon_section" id="icon_section">
           Neelendrareddy
         </a>
@@ -28,7 +34,26 @@ const Navbar = () => {
           </li>
         </ul>
         <RxHamburgerMenu size={38} className="nav_icon" />
-      </nav>
+      </nav> */}
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <ul>
+            <li>
+              <Link to="/">
+                <Home />
+              </Link>
+            </li>
+          </ul>
+        </Toolbar>
+      </AppBar>
     </>
   );
 };
