@@ -1,5 +1,12 @@
 @import "./globalStyle.scss";
 
+/* XXs */
+@mixin xxs {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+
 /* XS */
 @mixin xs {
   @media (min-width: 475px) {

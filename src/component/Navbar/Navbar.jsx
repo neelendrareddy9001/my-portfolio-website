@@ -1,9 +1,11 @@
+import React, { useState } from "react";
 import "./navbar.scss";
 
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="nav_section" id="nav_section">

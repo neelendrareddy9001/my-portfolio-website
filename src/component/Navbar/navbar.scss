@@ -7,31 +7,39 @@
     rgba(86, 213, 132, 1) 82%
   );
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  height: 3.5rem;
+  flex-wrap: nowrap;
+  height: 60px;
 
   .icon_section_title {
+    text-align: center;
     font-size: 1.4rem;
     text-decoration: none;
-    margin: 0 2.4rem;
+    margin: 0.8rem 3rem;
     font-weight: 600;
     cursor: pointer;
+    // @include xxs {
+    //   display: none;
+    // }
   }
   .nav_menu_section {
     display: flex;
     flex-direction: row;
     margin: 0 12rem;
   }
-  .nav_menu_section .nav_menu_navigation_link {
+  .nav_menu_section {
     text-decoration: none;
     display: block;
     color: #000;
+    .nav_menu_navigaiton_link {
+      display: block;
+      color: black;
+    }
   }
   .nav_icon {
-    @include md {
-      display: none;
-    }
+    color: #000;
+    width: 1.75rem;
+    height: 2rem;
   }
 }
