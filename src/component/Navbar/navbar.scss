@@ -41,5 +41,9 @@
     color: #000;
     width: 1.75rem;
     height: 2rem;
+    cursor: pointer;
+    @include xmd {
+      display: inline-block;
+    }
   }
 }
