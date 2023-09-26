@@ -11,22 +11,38 @@
   align-items: center;
   flex-wrap: nowrap;
   height: 60px;
+  @include xmd {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
+  }
+  @include lg {
+    display: flex;
+  }
 
   .icon_section_title {
-    text-align: center;
+    // text-align: center;
     font-size: 1.4rem;
     text-decoration: none;
     margin: 0.8rem 3rem;
     font-weight: 600;
     cursor: pointer;
-    // @include xxs {
-    //   display: none;
-    // }
+
+    @include xmd {
+      padding-left: -42px;
+    }
+
+    @include lg {
+      text-align: start;
+    }
   }
   .nav_menu_section {
     display: flex;
     flex-direction: row;
     margin: 0 12rem;
+    @include lg {
+      display: inline-block;
+    }
   }
   .nav_menu_section {
     text-decoration: none;
@@ -35,6 +51,9 @@
     .nav_menu_navigaiton_link {
       display: block;
       color: black;
+      @include lg {
+        display: flex;
+      }
     }
   }
   .nav_icon {
@@ -44,6 +63,9 @@
     cursor: pointer;
     @include xmd {
       display: inline-block;
+    }
+    @include lg {
+      display: none;
     }
   }
 }
