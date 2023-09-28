@@ -1,50 +1,94 @@
-@import "./globalStyle.scss";
+// @import "./globalStyle.scss";
 
-/* XXs */
-@mixin xxs {
-  @media (min-width: 320px) {
-    @content;
+// /* XXs */
+// @mixin xxs {
+//   @media (max-width: 320px) {
+//     @content;
+//   }
+// }
+
+// /* XS */
+// @mixin xmd {
+//   @media (min-width: 480px) {
+//     @content;
+//   }
+// }
+
+// /* SM */
+// @mixin sm {
+//   @media (min-width: 640px) {
+//     @content;
+//   }
+// }
+
+// /* MD */
+// @mixin md {
+//   @media (min-width: 768px) {
+//     @content;
+//   }
+// }
+
+// /* LG */
+// @mixin lg {
+//   @media (min-width: 1024px) and (max-width: 1200px) {
+//     @content;
+//   }
+// }
+
+// /* XL */
+// @mixin xl {
+//   @media (min-width: 1280px) {
+//     @content;
+//   }
+// }
+
+// /* 2XL */
+// @mixin xxl {
+//   @media (min-width: 1536px) {
+//     @content;
+//   }
+// }
+
+@mixin respond($screenType) {
+  @if $screenType == mini-mobile {
+    @media screen and (min-width: 0px) and (max-width: 320px) {
+      @content;
+    }
+  } @else if $screenType == mobile {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      @content;
+    }
+  } @else if $screenType == tablet {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      @content;
+    }
+  } @else if $screenType == laptop {
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      @content;
+    }
+  } @else if $screenType == desktop {
+    @media screen and (min-width: 992px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $screenType == screen-x {
+    @media screen and (min-width: 1024px) and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $screenType == screen-xx {
+    @media screen and (min-width: 1200px) and (max-width: 1280px) {
+      @content;
+    }
   }
 }
 
-/* XS */
-@mixin xmd {
-  @media (min-width: 480px) {
-    @content;
-  }
-}
-
-/* SM */
-@mixin sm {
-  @media (min-width: 640px) {
-    @content;
-  }
-}
-
-/* MD */
-@mixin md {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-
-/* LG */
-@mixin lg {
-  @media (min-width: 1024px) and (max-width: 1200px) {
-    @content;
-  }
-}
-
-/* XL */
-@mixin xl {
-  @media (min-width: 1280px) {
-    @content;
-  }
-}
-
-/* 2XL */
-@mixin xxl {
-  @media (min-width: 1536px) {
-    @content;
+@mixin respond-mb-l($scrrenType) {
+  @if $screenType == mb-l {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  } @else if $screenType == tab-l {
+    @media screen and (min-width: 640px) {
+      @content;
+    }
   }
 }

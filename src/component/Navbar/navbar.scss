@@ -1,69 +1,65 @@
+@import "../../styles/globalStyle.scss";
 @import "../../styles/media\ .scss";
 
-.nav_section {
-  background: linear-gradient(
-    90deg,
-    rgba(1, 230, 203, 1) 30%,
-    rgba(86, 213, 132, 1) 82%
-  );
+.nav__layout {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 60px;
-  @include xmd {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 22px;
-  }
-  @include lg {
-    display: flex;
-  }
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
 
-  .icon_section-title {
-    // text-align: center;
-    font-size: 1.4rem;
-    text-decoration: none;
-    margin: 0.8rem 3rem;
-    font-weight: 600;
-    cursor: pointer;
-
-    @include xmd {
-      padding-left: -42px;
-    }
-
-    @include lg {
-      text-align: start;
-    }
+  &-center {
+    width: 100%;
   }
-  .nav {
+  &-header {
     display: flex;
     flex-direction: row;
-    margin: 0 12rem;
-    &_menu_section {
-      @include lg {
-        display: flex;
-      }
-    }
-    &_menu-navigation-link {
-      display: block;
-      color: black;
-      @include lg {
-        display: flex;
-      }
-    }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 14px 16px;
+    min-height: 64px;
+    background-color: palegreen;
   }
+  &-title {
+    font-size: 1.55rem;
+  }
+  &-menu-section {
+    position: absolute;
+    right: 50px;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
 
-  .nav_icon {
-    color: #000;
-    width: 1.75rem;
-    height: 2rem;
-    cursor: pointer;
-    @include xmd {
-      display: inline-block;
-    }
-    @include lg {
+    @include respond(mini-mobile) {
       display: none;
     }
+    @include respond(mobile) {
+      display: none;
+    }
+    @include respond(tablet) {
+      display: none;
+    }
+    @include respond(desktop) {
+      display: none;
+    }
+  }
+  &-navigation-link {
+    display: inline-flex;
+    padding: 0 18px 0 18px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000;
+    font-weight: 300;
+  }
+  &-icon {
+    position: absolute;
+    font-size: 28px;
+    right: 22px;
+    top: 17px;
   }
 }
