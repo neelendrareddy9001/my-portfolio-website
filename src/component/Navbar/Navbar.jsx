@@ -20,14 +20,13 @@ const Navbar = () => {
               <a href="/about" className="nav__layout-navigation-link">
                 About
               </a>
+
               <a href="/cv" className="nav__layout-navigation-link">
                 Projects
               </a>
-
               <a href="/project" className="nav__layout-navigation-link">
                 Cv
               </a>
-
               <a href="/contact" className="nav__layout-navigation-link">
                 contact
               </a>
@@ -35,9 +34,29 @@ const Navbar = () => {
 
             <RxHamburgerMenu
               className="nav__layout-icon"
-              onClick={() => setShowMenu(!true)}
+              onClick={() => setShowMenu(true)}
             />
           </header>
+          {/* {setShowMenu && (
+            <>
+              <nav className="nav__layout-menu-section">
+                <a href="/about" className="nav__layout-navigation-link">
+                  About
+                </a>
+                <a href="/cv" className="nav__layout-navigation-link">
+                  Projects
+                </a>
+
+                <a href="/project" className="nav__layout-navigation-link">
+                  Cv
+                </a>
+
+                <a href="/contact" className="nav__layout-navigation-link">
+                  contact
+                </a>
+              </nav>
+            </>
+          )} */}
         </div>
       </div>
     </>

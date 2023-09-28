@@ -44,7 +44,7 @@
       display: none;
     }
     @include respond(desktop) {
-      display: none;
+      display: flex;
     }
   }
   &-navigation-link {
@@ -61,5 +61,15 @@
     font-size: 28px;
     right: 22px;
     top: 17px;
+    cursor: pointer;
+    @include respond(screen-x) {
+      display: none;
+    }
+    @include respond(screen-xx) {
+      display: none;
+    }
+    @include respond(screen-xl) {
+      display: none;
+    }
   }
 }
