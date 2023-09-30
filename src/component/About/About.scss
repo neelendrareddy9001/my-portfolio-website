@@ -1,0 +1,9 @@
+@import "../../styles/globalStyle";
+@import "../../styles/media\ .scss";
+
+.about__container {
+  width: 100%;
+  height: calc(100vh - 64px);
+
+  color: #000;
+}

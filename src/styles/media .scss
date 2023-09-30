@@ -85,13 +85,17 @@
   }
 }
 
-@mixin respond-mb-l($scrrenType) {
+@mixin respond-mb($screenType) {
   @if $screenType == mb-l {
     @media screen and (min-width: 576px) {
       @content;
     }
   } @else if $screenType == tab-l {
     @media screen and (min-width: 640px) {
+      @content;
+    }
+  } @else if $screenType == tab-2 {
+    @media screen and (max-width: 992px) {
       @content;
     }
   }
