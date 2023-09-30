@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Diversity1Sharp } from "@mui/icons-material";
+// import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <div className="nav__layout" id="nav__layout">
@@ -32,10 +32,7 @@ const Navbar = () => {
               </a>
             </nav>
 
-            <RxHamburgerMenu
-              className="nav__layout-icon"
-              onClick={() => setShowMenu(true)}
-            />
+            <RxHamburgerMenu className="nav__layout-icon" />
           </header>
           {/* {setShowMenu && (
             <>
