@@ -1,16 +1,13 @@
 @import "../../styles/globalStyle";
 @import "../../styles/media\ .scss";
 
-.about__container {
+.about__section {
   min-width: 89%;
   background-color: greenyellow;
   min-height: 100%;
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
-  padding: 50p 0px;
+  padding: 0 3rem;
 
-  &-inner {
+  &-grid {
     background-color: blue;
     color: #fff;
     display: grid;
