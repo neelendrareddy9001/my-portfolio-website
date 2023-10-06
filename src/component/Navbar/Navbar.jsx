@@ -1,43 +1,59 @@
 import React, { useState } from "react";
 import "./navbar.scss";
 
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const toggleLinks = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <>
       <div className="nav__layout" id="nav__layout">
         <div className="nav__layout-center" id="nav__layout-center">
           <header className="nav__layout-header" id="nav__layout-header">
-            <a href="/" className="nav__layout-title" id="nav__layout-title">
-              Neelendrareddy
-            </a>
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <a href="/" className="nav__layout-title" id="nav__layout-title">
+                Neelendrareddy
+              </a>
+            </Link>
+            <nav className=" nav__layout-menu-section is_visible">
+              <Link to="/about">
+                <a href="/about" className="nav__layout-navigation-link">
+                  About
+                </a>
+              </Link>
 
-            <nav className="nav__layout-menu-section">
-              <a href="/about" className="nav__layout-navigation-link">
-                About
-              </a>
-
-              <a href="/projects" className="nav__layout-navigation-link">
-                Projects
-              </a>
-              <a href="/cv" className="nav__layout-navigation-link">
-                Cv
-              </a>
-              <a href="/contact" className="nav__layout-navigation-link">
-                contact
-              </a>
-              <button className="btn">Github Profile</button>
+              <Link to="/projects">
+                <a href="/projects" className="nav__layout-navigation-link">
+                  Projects
+                </a>
+              </Link>
+              <Link to="/cv">
+                <a href="/cv" className="nav__layout-navigation-link">
+                  Cv
+                </a>
+              </Link>
+              <Link to="/contact">
+                <a href="/contact" className="nav__layout-navigation-link">
+                  contact
+                </a>
+              </Link>
             </nav>
 
             <RxHamburgerMenu
               className="nav__layout-icon"
-              onClick={() => setShowMenu(!showMenu)}
+              onClick={toggleLinks}
             />
           </header>
+          {/* <div className="nav__layout-menu-section">
+            {showMenu
+              ? "nav__layout-menu-section"
+              : "nav__layout-menu-seciton is_visible"}
+          </div> */}
         </div>
       </div>
     </>

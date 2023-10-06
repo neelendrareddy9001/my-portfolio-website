@@ -2,17 +2,20 @@
 @import "../../styles/media\ .scss";
 
 .nav__layout {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
   overflow-x: hidden;
-  position: relative;
+  z-index: 99;
+
   -webkit-overflow-scrolling: touch;
 
   &-center {
     width: 100%;
-    height: 100%;
+    position: relative;
   }
   &-header {
     display: flex;
@@ -40,10 +43,6 @@
     align-items: center;
     padding: 0;
 
-    &.btn {
-      background: blue;
-    }
-
     @include respond(mini-mobile) {
       display: none;
     }
@@ -69,7 +68,9 @@
     font-size: 22px;
     color: #000;
     font-weight: 300;
+    height: 75%;
   }
+
   &-icon {
     position: absolute;
     font-size: 28px;
@@ -92,4 +93,21 @@
       display: block;
     }
   }
+  // .is_visible {
+  //   display: none;
+  //   @include respond-mb(tab-2) {
+  //     position: absolute;
+  //     top: 70px;
+  //     right: 0;
+  //     background: blue;
+  //     display: block;
+  //     flex-direction: column;
+  //     height: 90vh;
+
+  //     &-navigation-link {
+  //       width: 100%;
+  //       padding: 32px;
+  //     }
+  //   }
+  // }
 }
