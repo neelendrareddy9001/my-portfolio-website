@@ -15,11 +15,11 @@ const Navbar = () => {
       <div className="nav__layout" id="nav__layout">
         <div className="nav__layout-center" id="nav__layout-center">
           <header className="nav__layout-header" id="nav__layout-header">
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <a href="/" className="nav__layout-title" id="nav__layout-title">
-                Neelendrareddy
-              </a>
-            </Link>
+            {/* <Link to="/" style={{ textDecoration: "none" }}> */}
+            <a href="/" className="nav__layout-title" id="nav__layout-title">
+              Neelendrareddy
+            </a>
+            {/* </Link> */}
             <nav className=" nav__layout-menu-section is_visible">
               <Link to="/about">
                 <a href="/about" className="nav__layout-navigation-link">
@@ -49,11 +49,18 @@ const Navbar = () => {
               onClick={toggleLinks}
             />
           </header>
-          {/* <div className="nav__layout-menu-section">
+          <div className="nav__layout-menu-section">
             {showMenu
               ? "nav__layout-menu-section"
               : "nav__layout-menu-seciton is_visible"}
-          </div> */}
+          </div>
+        </div>
+      </div>
+
+      <div className="layout__container">
+        <div className="layout__container-inner">
+          <div className="left"></div>
+          <div className="right"></div>
         </div>
       </div>
     </>

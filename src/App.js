@@ -16,6 +16,7 @@ function App() {
   return (
     <Fragment>
       <Navbar />
+
       <Routes>
         <Route path="/" Component={Home} exact />
         <Route path="/about" Component={About} exact />

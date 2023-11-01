@@ -111,3 +111,18 @@
   //   }
   // }
 }
+
+.layout__container {
+  position: absolute;
+  top: 40px;
+  width: 100vw;
+  height: calc(100vh - 64px);
+  background-color: black;
+  // background: green;
+
+  &-inner {
+    width: 100px;
+    height: 100px;
+    background: white;
+  }
+}
