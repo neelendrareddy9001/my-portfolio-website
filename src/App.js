@@ -2,7 +2,7 @@
 import "./App.scss";
 import { Fragment } from "react";
 
-import Home from "../src/component/About/About";
+import Home from "../src/component/Home/Home";
 import About from "../src/component/About/About";
 import Project from "../src/component/Projects/Projects";
 import Cv from "../src/component/cv/Cv";

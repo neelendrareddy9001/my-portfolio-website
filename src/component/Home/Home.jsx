@@ -1,10 +1,17 @@
 import React from "react";
-import "./Home.scss";
+import "./home.scss";
 
 const Home = () => {
   return (
-    <div className="container">
-      <h2>Welcome to home page</h2>
+    <div className="layout__container">
+      <div className="layout__container-inner">
+        <div className="left">
+          <h1>hello</h1>
+        </div>
+        <div className="right">
+          <h1>World</h1>
+        </div>
+      </div>
     </div>
   );
 };
