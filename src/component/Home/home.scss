@@ -3,13 +3,16 @@
 
 .layout__container {
   max-width: 80%;
-  min-height: 400px;
+  min-height: 450px;
   border-radius: 25px;
 
   background-color: red;
   display: grid;
   margin: 50px auto;
 
-  &inner {
+  &-inner {
+    padding: 20px;
+    color: white;
+    width: 50%;
   }
 }
