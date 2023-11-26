@@ -18,3 +18,25 @@
     min-width: 85%;
   }
 }
+
+.about_container {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 4rem;
+}
+.about_img {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+.about_info {
+  grid-template-columns: repeat(3, 140px);
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.about_box {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1rem 1.25rem;
+}
