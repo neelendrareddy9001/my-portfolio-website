@@ -3,12 +3,13 @@ import "./navbar.scss";
 
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const toggleLinks = () => {
-    setShowMenu(!showMenu);
+  const toggleLinks = (prev) => {
+    setShowMenu(!prev);
   };
   return (
     <>
@@ -49,7 +50,7 @@ const Navbar = () => {
               onClick={toggleLinks}
             />
           </header>
-          <div className="nav__layout-menu-section">
+          <div className="nav__layout-mobile-menu">
             {showMenu
               ? "nav__layout-menu-section"
               : "nav__layout-menu-seciton is_visible"}
