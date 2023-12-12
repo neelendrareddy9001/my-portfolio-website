@@ -2,11 +2,12 @@
 @import "../../styles/media\ .scss";
 
 .layout__container {
+  padding: 2rem 7%;
   max-width: 80%;
   min-height: 450px;
   border-radius: 25px;
 
-  background-color: red;
+  background-color: blue($color: #000000);
   display: grid;
   margin: 50px auto;
 

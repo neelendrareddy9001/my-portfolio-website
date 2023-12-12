@@ -3,12 +3,13 @@ import "./navbar.scss";
 
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoCloseOutline } from "react-icons/io5";
+// import { IoCloseOutline } from "react-icons/io5";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleLinks = (prev) => {
+    console.log("Hello world!");
     setShowMenu(!prev);
   };
   return (
