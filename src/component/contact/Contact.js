@@ -5,6 +5,7 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const handlerSubmit = () => {};
   return (
     <div className="contacts-container">
       <div className="contact_form_container">
@@ -41,6 +42,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
+      <button className="btn btn-primary">submt</button>
     </div>
   );
 };
