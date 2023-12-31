@@ -14,7 +14,7 @@ const Contact = () => {
             <label htmlFor="Name">
               <input
                 type="text"
-                value={name}
+        
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter name"
               ></input>
@@ -24,7 +24,7 @@ const Contact = () => {
             <label type="Email">
               <input
                 type="email"
-                value={email}
+          
                 onChange={(e) => setEmail(e.target.value)}
               >
                 Enter email
@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="input-text">
             <input
               type="password"
-              value={password}
+              
               onChange={(e) => setPassword(e.target.value)}
             >
               Enter pasowrd placeholder
