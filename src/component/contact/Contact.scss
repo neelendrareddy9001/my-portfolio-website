@@ -1,24 +1,13 @@
 @import "../../styles/globalStyle.scss";
 @import "../../styles/media\ .scss";
 
-.container.contact_container {
-  width: 50%;
-  display: grid;
-  grid-template-columns: 30% 50%;
-  gap: 10%;
-
-  .contact_options {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-
-    .contact_option {
-      background: var(--color-bg-variant);
-      padding: 1.2rem;
-      border-radius: 1.2rem;
-      text-align: center;
-      border: 1px solid transparent;
-      transition: var(--transition);
-    }
-  }
+.contact {
+  width: 89%;
+  max-height: calc(100% - 64px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: lightsalmon;
 }
