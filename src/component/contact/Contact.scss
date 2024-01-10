@@ -1,7 +1,7 @@
 @import "../../styles/globalStyle.scss";
 @import "../../styles/media\ .scss";
 
-.contact {
+.contaact {
   width: 89%;
   max-height: calc(100% - 64px);
   margin: 0 auto;
@@ -14,24 +14,23 @@
     text-transform: capitalize;
     font-weight: bolder;
     font-size: 1.8rem;
+    text-align: center;
 
-    &::before {
-      content: "";
-      width: 40px;
-      line-height: 3px;
-      background-color: blue;
-    }
-  }
+    .container.contact_container {
+      width: 50%;
+      display: grid;
+      grid-template-columns: 30% 58%;
+      gap: 12%;
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
+      &.contact_options {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
 
-    .contact_options {
-      background-color: green;
-      margin-right: 20px;
-      text-align: center;
-      padding: 28px 22px;
+        &.contact_option {
+          background-color: darkcyan;
+        }
+      }
     }
   }
 }

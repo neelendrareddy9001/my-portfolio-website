@@ -7,7 +7,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(true);
+  const [showMenu, setShowMenu] = useState(false);
   const toggleLinks = (prev) => {
     console.log("Hello world!");
     setShowMenu(!prev);
@@ -54,11 +54,11 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* <div className="nav__layout-mobile-menu">
+      <div className="nav__layout-mobile-menu">
         {showMenu
-          ? "nav__layout-menu-section"
+          ? "nav__layout-menu-sectionn mobile-menu"
           : "nav__layout-menu-seciton is_visible"}
-      </div> */}
+      </div>
 
       <div className="layout__container">
         <div className="layout__container-inner"></div>
