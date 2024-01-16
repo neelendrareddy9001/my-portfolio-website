@@ -13,7 +13,7 @@ const Navbar = () => {
     setShowMenu(!prev);
   };
   return (
-    <>
+    <div>
       <div className="nav__layout" id="nav__layout">
         <div className="nav__layout-center" id="nav__layout-center">
           <header className="nav__layout-header" id="nav__layout-header">
@@ -53,17 +53,7 @@ const Navbar = () => {
           </header>
         </div>
       </div>
-
-      <div className="nav__layout-mobile-menu">
-        {showMenu
-          ? "nav__layout-menu-sectionn mobile-menu"
-          : "nav__layout-menu-seciton is_visible"}
-      </div>
-
-      <div className="layout__container">
-        <div className="layout__container-inner"></div>
-      </div>
-    </>
+    </div>
   );
 };
 

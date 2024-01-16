@@ -7,8 +7,10 @@ import { BsWhatsapp } from "react-icons/bs";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const handlerSubmit = () => {};
+
+  const handlerSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <section className="contact">
@@ -20,26 +22,19 @@ const Contact = () => {
               <MdOutlineEmail />
               <h4>Email</h4>
               <h5>neelendrareddy123@gmail.com</h5>
-              <a href="mailto:neelendrareddy123@gmail.com" target="_blank">
-                Send me a message
-              </a>
+              <a href="mailto:neelendrareddy123@gmail.com">Send me a message</a>
             </article>
             <article className="contact_option">
               <RiMessengerLine />
               <h4>Messenger</h4>
               <h5>panditi.neelendrareddy</h5>
-              <a href="https://m.me/panditi.neelendrareddy.7" target="_blank">
-                Send a message
-              </a>
+              <a href="https://m.me/panditi.neelendrareddy.7">Send a message</a>
             </article>
             <article className="contact_opton">
               <BsWhatsapp />
               <h4>WhatsApp</h4>
               <h5>+48739437031</h5>
-              <a
-                href="https://api.whatsapp.com/send?+48739437031"
-                target="_blank"
-              >
+              <a href="https://api.whatsapp.com/send?+48739437031">
                 Send a message
               </a>
             </article>
@@ -53,6 +48,7 @@ const Contact = () => {
               name="name"
               placeholder="Your Full name"
               required
+              onChange={(e) => setName(e.target.value)}
             />
             <input
               rel="noreferer"
@@ -61,6 +57,7 @@ const Contact = () => {
               name="email"
               placeholder="Your Email"
               required
+              onChange={(e) => setEmail(e.target.value)}
             />
             <textarea
               rel="noreferer"
