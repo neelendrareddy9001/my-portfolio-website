@@ -3,8 +3,7 @@ import "./home.scss";
 import ParticleBg from "../ParticleBg";
 
 const Home = () => {
-  <ParticleBg />;
-  return <h1>Home</h1>;
+  return <div className="home-container"></div>;
 };
 
 export default Home;

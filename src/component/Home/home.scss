@@ -1,19 +1,10 @@
 @import "../../styles/globalStyle";
 @import "../../styles/media\ .scss";
 
-.layout__container {
-  padding: 2rem 7%;
-  max-width: 80%;
-  min-height: 450px;
-  border-radius: 25px;
-
-  background-color: blue($color: #000000);
-  display: grid;
-  margin: 50px auto;
-
-  nested-inner {
-    padding: 20px;
-    color: white;
-    width: 50%;
-  }
+.home-container {
+  width: 95%;
+  height: calc(100% - 64px);
+  min-height: 560px;
+  background-color: green;
+  padding: 1rem auto;
 }

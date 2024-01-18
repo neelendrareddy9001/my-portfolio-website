@@ -3,15 +3,22 @@
 
 .about {
   // background-color: greenyellow;
-  max-height: calc(100% - 64px);
-  padding: 0 3rem;
-  display: flex;
+  min-height: calc(100% - 64px);
+  margin: 1% 3rem;
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin: 2.5rem auto;
+  }
+
+  .about_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
 }
-.about_container {
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  column-gap: 4rem;
-}
+
 .about_img {
   width: 350px;
   border-radius: 1.5rem;

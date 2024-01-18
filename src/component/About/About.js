@@ -8,10 +8,7 @@ const About = () => {
   return (
     <>
       <section className="about" id="about">
-        <div className="about_title_section">
-          <h2 className="section_title">About Me</h2>
-          <span className="section_subtitle">My inroduction</span>
-        </div>
+        <h2 className="section_title">About Me</h2>
         <div className="about_container container grid">
           <img src={myImg} className="about_img" alt="" />
           <div className="about_data">

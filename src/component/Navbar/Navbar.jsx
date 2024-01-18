@@ -18,9 +18,10 @@ const Navbar = () => {
         <div className="nav__layout-center" id="nav__layout-center">
           <header className="nav__layout-header" id="nav__layout-header">
             {/* <Link to="/" style={{ textDecoration: "none" }}> */}
-            <a href="/" className="nav__layout-title" id="nav__layout-title">
+            <Link to="/" className="nav__layout-title" id="nav__layout-title">
               Neelendrareddy
-            </a>
+            </Link>
+
             {/* </Link> */}
             <nav className=" nav__layout-menu-section is_visible">
               <Link to="/about">
