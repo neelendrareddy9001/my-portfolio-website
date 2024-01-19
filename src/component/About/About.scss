@@ -16,6 +16,21 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 1rem;
+
+    .about_img {
+      margin-right: 1.25rem;
+    }
+
+    .about_data {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @include respond(mobile) {
+      flex-direction: column;
+    }
   }
 }
 

@@ -39,8 +39,10 @@
     font-weight: lighter;
     color: #000;
     text-decoration: none;
-
     cursor: pointer;
+    @include respond(mobile) {
+      display: none;
+    }
   }
   &-menu-section {
     position: absolute;
