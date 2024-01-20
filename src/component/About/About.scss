@@ -31,6 +31,10 @@
     @include respond(mobile) {
       flex-direction: column;
     }
+
+    @include md {
+      flex-direction: column;
+    }
   }
 }
 

@@ -118,4 +118,10 @@
   //     }
   //   }
   // }
+
+  .container {
+    width: 150px;
+    height: calc(100vh - 64px);
+    background-color: lightblue;
+  }
 }

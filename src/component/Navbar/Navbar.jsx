@@ -9,7 +9,6 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const toggleLinks = (prev) => {
-    console.log("Hello world!");
     setShowMenu(!prev);
   };
   return (
@@ -54,6 +53,8 @@ const Navbar = () => {
           </header>
         </div>
       </div>
+
+      {showMenu ? <div className="container">Hello Menu</div> : <p></p>}
     </div>
   );
 };
