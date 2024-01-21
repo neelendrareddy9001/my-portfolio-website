@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import "./navbar.scss";
 
 import { Link } from "react-router-dom";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
+import ResponsiveMenu from "./ResponsiveMenu";
 // import { IoCloseOutline } from "react-icons/io5";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const toggleLinks = (prev) => {
-    setShowMenu(!prev);
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
   };
   return (
     <div>
@@ -46,15 +47,27 @@ const Navbar = () => {
               </Link>
             </nav>
 
-            <RxHamburgerMenu
+            {showMenu ? (
+              <HiMenuAlt1
+                className="nav__layout-icon"
+                onClick={toggleMenu}
+                size={30}
+              />
+            ) : (
+              <HiMenuAlt3
+                className="nav__layout-icon"
+                onClick={toggleMenu}
+                size={30}
+              />
+            )}
+            {/* <RxHamburgerMenu
               className="nav__layout-icon"
               onClick={toggleLinks}
-            />
+            /> */}
           </header>
         </div>
       </div>
-
-      {showMenu ? <div className="container">Hello Menu</div> : <p></p>}
+      <ResponsiveMenu showMenu={showMenu} />
     </div>
   );
 };

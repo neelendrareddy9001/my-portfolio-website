@@ -32,5 +32,19 @@
         background-color: darkcyan;
       }
     }
+
+    // form
+    form {
+      flex-direction: column;
+
+      @include respond(mini-mobile) {
+        flex-direction: column;
+      }
+
+      input {
+        width: 30%;
+        padding: 12px 24px;
+      }
+    }
   }
 }
