@@ -17,7 +17,7 @@ const About = () => {
               Since I am learning frontend development features. It motivates me
               design multiple Ui templates as i kept on going.
             </p>
-            <button download="" href="cv" className="button button_flex">
+            <button type="submit" download="" href="cv" className="button button_flex">
               Download CV
             </button>
           </div>

@@ -2,7 +2,13 @@ import React from "react";
 
 const ResponsiveMenu = ({ showMenu }) => {
   return (
-    <div>{showMenu ? <div className="menuMobile"></div> : <div></div>}</div>
+    <div>
+      {showMenu ? (
+        <div className="menuMobile"></div>
+      ) : (
+        <div className="closedMenu"></div>
+      )}
+    </div>
   );
 };
 
