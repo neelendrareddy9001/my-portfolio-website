@@ -8,10 +8,13 @@ import ResponsiveMenu from "./ResponsiveMenu";
 // import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState("mb-menu");
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    showMenu === "mb-menu"
+      ? setShowMenu("nav-menu nav_active")
+      : setShowMenu("nav-menu");
   };
+
   return (
     <div>
       <div className="nav__layout" id="nav__layout">
@@ -23,9 +26,12 @@ const Navbar = () => {
             </Link>
 
             {/* </Link> */}
-            <nav className=" nav__layout-menu-section is_visible">
+            <nav className="nav__layout-menu-section active">
               <Link to="/about">
-                <a href="/about" className="nav__layout-navigation-link">
+                <a
+                  href="/about"
+                  className={`nav__layout-navigation-link ${showMenu}`}
+                >
                   About
                 </a>
               </Link>
@@ -46,20 +52,13 @@ const Navbar = () => {
                 </a>
               </Link>
             </nav>
-
-            {showMenu ? (
-              <HiMenuAlt1
-                className="nav__layout-icon"
-                onClick={toggleMenu}
-                size={30}
-              />
-            ) : (
-              <HiMenuAlt3
-                className="nav__layout-icon"
-                onClick={toggleMenu}
-                size={30}
-              />
-            )}
+            <div onClick={toggleMenu}>
+              {showMenu ? (
+                <HiMenuAlt1 className="nav__layout-icon" size={30} />
+              ) : (
+                <HiMenuAlt3 className="nav__layout-icon" size={30} />
+              )}
+            </div>
             {/* <RxHamburgerMenu
               className="nav__layout-icon"
               onClick={toggleLinks}
@@ -67,7 +66,6 @@ const Navbar = () => {
           </header>
         </div>
       </div>
-      <ResponsiveMenu showMenu={showMenu} />
     </div>
   );
 };
