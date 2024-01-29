@@ -50,7 +50,7 @@ const Navbar = () => {
               </nav>
             </ul>
 
-            <div>
+            <div className="hamburger">
               {showMenu ? (
                 <HiMenuAlt1
                   className="nav__layout-icon"
