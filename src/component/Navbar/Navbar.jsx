@@ -3,16 +3,11 @@ import "./navbar.scss";
 
 import { Link } from "react-router-dom";
 import { HiMenuAlt1, HiMenuAlt3 } from "react-icons/hi";
-import ResponsiveMenu from "./ResponsiveMenu";
-// import { IoCloseOutline } from "react-icons/io5";
-// import { Diversity1Sharp } from "@mui/icons-material";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState("mb-menu");
+  const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
-    showMenu === "mb-menu"
-      ? setShowMenu("nav-menu nav_active")
-      : setShowMenu("nav-menu");
+    setShowMenu(!showMenu);
   };
 
   return (
@@ -26,43 +21,50 @@ const Navbar = () => {
             </Link>
 
             {/* </Link> */}
-            <nav className="nav__layout-menu-section active">
-              <Link to="/about">
-                <a
-                  href="/about"
-                  className={`nav__layout-navigation-link ${showMenu}`}
-                >
-                  About
-                </a>
-              </Link>
+            <ul className={showMenu ? "menu_open menu" : "menu"}>
+              <nav className="nav__layout-menu-section active">
+                <Link to="/about">
+                  <a
+                    href="/about"
+                    className={`nav__layout-navigation-link ${showMenu}`}
+                  >
+                    About
+                  </a>
+                </Link>
 
-              <Link to="/projects">
-                <a href="/projects" className="nav__layout-navigation-link">
-                  Projects
-                </a>
-              </Link>
-              <Link to="/cv">
-                <a href="/cv" className="nav__layout-navigation-link">
-                  Cv
-                </a>
-              </Link>
-              <Link to="/contact">
-                <a href="/contact" className="nav__layout-navigation-link">
-                  contact
-                </a>
-              </Link>
-            </nav>
-            <div onClick={toggleMenu}>
+                <Link to="/projects">
+                  <a href="/projects" className="nav__layout-navigation-link">
+                    Projects
+                  </a>
+                </Link>
+                <Link to="/cv">
+                  <a href="/cv" className="nav__layout-navigation-link">
+                    Cv
+                  </a>
+                </Link>
+                <Link to="/contact">
+                  <a href="/contact" className="nav__layout-navigation-link">
+                    contact
+                  </a>
+                </Link>
+              </nav>
+            </ul>
+
+            <div>
               {showMenu ? (
-                <HiMenuAlt1 className="nav__layout-icon" size={30} />
+                <HiMenuAlt1
+                  className="nav__layout-icon"
+                  size={30}
+                  onClick={toggleMenu}
+                />
               ) : (
-                <HiMenuAlt3 className="nav__layout-icon" size={30} />
+                <HiMenuAlt3
+                  className="nav__layout-icon"
+                  size={30}
+                  onClick={toggleMenu}
+                />
               )}
             </div>
-            {/* <RxHamburgerMenu
-              className="nav__layout-icon"
-              onClick={toggleLinks}
-            /> */}
           </header>
         </div>
       </div>
