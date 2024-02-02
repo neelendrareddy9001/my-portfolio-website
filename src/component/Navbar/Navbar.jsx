@@ -1,56 +1,50 @@
 import React, { useState } from "react";
 import "./navbar.scss";
-
 import { Link } from "react-router-dom";
+import { CgMenu } from "react-icons/cg";
+import { IoClose } from "react-icons/io5";
 
-import { BiMenu, BiX } from "react-icons/bi";
-
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const handleClick = () => {
-    setOpen(!open);
+const Header = () => {
+  const [showMenu, setShowMenu] = useState(true);
+  const handleToggle = (prev) => {
+    setShowMenu(!showMenu);
   };
   return (
-    <nav className={`header container`}>
-      <div className="logo">
+    <nav className="header">
+      <div className="header-left">
         <Link to="/">
-          <a href="/">
-            <h2>NeelendraReddy</h2>
-          </a>
+          <p className="logo">Navbar</p>
         </Link>
       </div>
-      <ul className={open ? "menu-open menu" : "menu"}>
-        <li className="menu-item">
-          <a href="/">
-            <h5>About</h5>
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/about">
-            <h5>Cv</h5>
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/portfolio">
-            <h5>Projects</h5>
-          </a>
-        </li>
-        <li className="menu-item">
-          <a href="/contact">
-            <h5>Contact</h5>
-          </a>
-        </li>
-      </ul>
+      <div className="header-right">
+        <ul className={`${showMenu ? "menu-list" : "mb-menu"}`}>
+          <Link to="/">
+            <p className="menu-list-item active">Home</p>
+          </Link>
+          <Link to="/about">
+            <p className="menu-list-item">About</p>
+          </Link>
+          <Link to="/cv">
+            <p className="menu-list-item">Cv</p>
+          </Link>
+          <Link to="/projects">
+            <p className="menu-list-item">Projects</p>
+          </Link>
 
-      <div className="hamburger">
-        {open ? (
-          <BiX onClick={handleClick} />
+          <Link to="/contact">
+            <p className="menu-list-item">Contact</p>
+          </Link>
+        </ul>
+      </div>
+      <div className="header-menu-icon">
+        {showMenu ? (
+          <CgMenu onClick={handleToggle} />
         ) : (
-          <BiMenu onClick={handleClick} />
+          <IoClose onClick={handleToggle} />
         )}
       </div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Header;
