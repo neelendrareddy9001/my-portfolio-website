@@ -6,8 +6,8 @@ import Type from "../Navbar/Type";
 
 const Home = () => {
   return (
-    <section className="section">
-      <Container className="home-section" id="home">
+    <section className="section" id="home">
+      <Container className="home-section">
         <ParticleBg />
         <Container className="home-content">
           <Row>

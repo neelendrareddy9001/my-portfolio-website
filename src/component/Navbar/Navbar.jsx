@@ -12,35 +12,35 @@ const Header = () => {
   return (
     <nav className="header">
       <div className="header-left">
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none" }}>
           <p className="logo">Navbar</p>
         </Link>
       </div>
       <div className="header-right">
         <ul className={`${showMenu ? "menu-list" : "mb-menu"}`}>
-          <Link to="/">
+          <Link to="/" style={{ textDecoration: "none" }}>
             <p className="menu-list-item active">Home</p>
           </Link>
-          <Link to="/about">
+          <Link to="/about" style={{ textDecoration: "none" }}>
             <p className="menu-list-item">About</p>
           </Link>
-          <Link to="/cv">
+          <Link to="/cv" style={{ textDecoration: "none" }}>
             <p className="menu-list-item">Cv</p>
           </Link>
-          <Link to="/projects">
+          <Link to="/projects" style={{ textDecoration: "none" }}>
             <p className="menu-list-item">Projects</p>
           </Link>
 
-          <Link to="/contact">
+          <Link to="/contact" style={{ textDecoration: "none" }}>
             <p className="menu-list-item">Contact</p>
           </Link>
         </ul>
       </div>
       <div className="header-menu-icon">
         {showMenu ? (
-          <CgMenu onClick={handleToggle} />
+          <CgMenu onClick={handleToggle} size={30} />
         ) : (
-          <IoClose onClick={handleToggle} />
+          <IoClose onClick={handleToggle} size={30} />
         )}
       </div>
     </nav>

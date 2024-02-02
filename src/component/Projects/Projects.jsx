@@ -3,9 +3,9 @@ import "./Project.scss";
 
 const Projects = () => {
   return (
-    <div className="contact">
+    <section className="contact" id="contact">
       <h2>Hello world!</h2>
-    </div>
+    </section>
   );
 };
 

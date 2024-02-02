@@ -13,7 +13,7 @@ const Contact = () => {
   };
   return (
     <>
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2>Contact Me</h2>
         <div className="container contact_container">
           <h5 className="text-center ">Get In Touch</h5>

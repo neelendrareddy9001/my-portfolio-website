@@ -29,16 +29,21 @@
           color: darkblue;
         }
       }
-
-      @include respond(tablet) {
+      @include md {
         display: none;
       }
+
+      // @include respond(laptop) {
+      //   display: none;
+      // }
+      // @include respond(mobile) {
+      //   display: none;
+      // }
     }
   }
   &-menu-icon {
     @include respond(tablet) {
       display: block;
-      font-size: 28px;
     }
   }
 

@@ -23,7 +23,7 @@
 
 /* MD */
 @mixin md {
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
@@ -59,7 +59,7 @@
       @content;
     }
   } @else if $screenType == tablet {
-    @media screen and (min-width: 480px) and (max-width: 768px) {
+    @media screen and (max-width: 480px) and (max-width: 768px) {
       @content;
     }
   } @else if $screenType == laptop {
