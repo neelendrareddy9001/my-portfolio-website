@@ -13,7 +13,7 @@ const Header = () => {
     <nav className="header">
       <div className="header-left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <p className="logo">Navbar</p>
+          <p className="logo">Neelendrareddy</p>
         </Link>
       </div>
       <div className="header-right">

@@ -28,11 +28,11 @@
       gap: 1rem;
     }
 
-    @include respond(mobile) {
+    @include tablet-m {
       flex-direction: column;
     }
 
-    @include md {
+    @include tablet-l {
       flex-direction: column;
     }
   }
