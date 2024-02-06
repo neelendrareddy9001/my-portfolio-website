@@ -6,13 +6,15 @@
   z-index: -1;
   width: 1200px;
   background-color: green;
-  margin: 6% auto 0;
+
   border-radius: 25px;
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 4);
 
   .home-content {
     padding: 9rem 0 2rem !important;
-    height: 48vh;
+    height: calc(100% - 75px);
+    min-height: 65vh;
+    max-width: 90vw;
     color: whitesmoke;
     text-align: left;
 
