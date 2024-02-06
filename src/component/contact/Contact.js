@@ -3,6 +3,7 @@ import "./Contact.scss";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import SocialIcons from "../SocialIcons";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -70,6 +71,9 @@ const Contact = () => {
               Sent a mesage
             </button>
           </form>
+        </div>
+        <div className="social_icons">
+          <SocialIcons />
         </div>
       </section>
     </>
