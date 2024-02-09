@@ -9,7 +9,7 @@ const About = () => {
     <>
       <section className="about" id="about">
         <h2 className="section_title">About Me</h2>
-        <div className="about_container container grid">
+        <div className="about_container ">
           <img src={myImg} className="about_img" alt="" />
           <div className="about_data">
             <Info />
@@ -17,7 +17,12 @@ const About = () => {
               Since I am learning frontend development features. It motivates me
               design multiple Ui templates as i kept on going.
             </p>
-            <button type="submit" download="" href="cv" className="button button_flex">
+            <button
+              type="submit"
+              download=""
+              href="cv"
+              className="button button_flex"
+            >
               Download CV
             </button>
           </div>

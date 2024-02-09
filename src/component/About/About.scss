@@ -3,7 +3,7 @@
 
 .about {
   // background-color: greenyellow;
-  min-height: calc(100% - 64px);
+  min-height: calc(100% - 75px);
   margin: 1% 3rem;
 
   h2 {
@@ -13,9 +13,14 @@
   }
 
   .about_container {
+    @include tablet-l {
+    }
+    background-color: black;
+    color: white;
     display: flex;
-    align-items: center;
+
     flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
 
     .about_img {
