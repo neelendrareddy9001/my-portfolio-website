@@ -2,51 +2,48 @@
 @import "../../styles/media\ .scss";
 
 .contact {
-  max-width: 80%;
-  min-height: 75%;
-  margin: 2rem auto;
-  border-radius: 14px;
-  text-align: center;
-  // display: flex;
-  // justify-content: space-between;
-  background-color: lightpink;
+  max-width: 90%;
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 8rem auto;
+  border-radius: 15px;
+  height: 65vh;
 
-  h2 {
+  .contact_title {
     text-align: center;
-    text-transform: capitalize;
-    font-weight: bolder;
-    font-size: 1.8rem;
-    padding: 1.5rem auto;
+    font-weight: 900;
+    padding: 14px auto;
   }
+
   .contact_container {
-    margin: 5rem auto;
     display: flex;
     justify-content: space-between;
-    h5 {
-      align-items: center;
-    }
+    gap: 1rem;
+
     .contact_options {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-
       .contact_option {
-        background-color: darkcyan;
+        background-color: yellow;
       }
     }
-
-    // form
     form {
-      flex-direction: column;
-
-      @include tablet-m {
-        flex-direction: column;
-      }
+      width: 50%;
 
       input {
-        width: 30%;
-        padding: 12px 24px;
+        padding: 14px 22px;
+        border-radius: 12px;
+        cursor: pointer;
       }
     }
   }
+  // .social_icons {
+  //   &.stick_follow_icon {
+  //     position: absolute;
+  //     top: 50%;
+  //     left: 10%;
+  //     width: 8px;
+  //     background-color: black;
+  //   }
+  // }
 }
