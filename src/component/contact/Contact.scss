@@ -2,7 +2,7 @@
 @import "../../styles/media\ .scss";
 
 .contact {
-  max-width: 90%;
+  max-width: 80%;
   background-color: skyblue;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
   border-radius: 15px;
   height: 65vh;
 
-  .contact_title {
+  &.contact_title {
     text-align: center;
     font-weight: 900;
     padding: 14px auto;
@@ -25,6 +25,17 @@
     .contact_options {
       .contact_option {
         background-color: yellow;
+        margin: 8px;
+        border-radius: 14px;
+        padding: 12px;
+
+        .contact_info {
+          text-align: center;
+          .social_icon {
+            cursor: pointer;
+            margin: 8px auto;
+          }
+        }
       }
     }
     form {
