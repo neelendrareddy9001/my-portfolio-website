@@ -4,57 +4,81 @@
 .contact {
   max-width: 80%;
   background-color: skyblue;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
   margin: 8rem auto;
   border-radius: 15px;
-  height: 65vh;
+  min-height: 100vh;
 
-  &.contact_title {
+  .contact_title {
     text-align: center;
-    font-weight: 900;
-    padding: 14px auto;
+    font-weight: 700;
+    padding: 1rem;
+    font-weight: 32px;
+    background: #1dcf3a;
+
+    background: linear-gradient(to right, #1dcf3a 0%, #80cf97 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .contact_container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem auto;
+    max-height: 100%;
     gap: 1rem;
 
-    .contact_options {
-      .contact_option {
-        background-color: yellow;
-        margin: 8px;
-        border-radius: 14px;
-        padding: 12px;
+    @media screen and (max-width: 568px) {
+      flex-direction: column;
+    }
 
-        .contact_info {
-          text-align: center;
-          .social_icon {
-            cursor: pointer;
-            margin: 8px auto;
-          }
+    .contact_options .contact_option {
+      background-color: yellow;
+      margin: 14px;
+      border-radius: 14px;
+      padding: 4rem auto;
+
+      .contact_info {
+        text-align: center;
+        padding: 18px;
+        a {
+          text-decoration: none;
+        }
+        .social_icon {
+          cursor: pointer;
+          margin: 8px auto;
         }
       }
     }
-    form {
-      width: 50%;
+  }
+  form {
+    width: 50%;
 
-      input {
-        padding: 14px 22px;
-        border-radius: 12px;
-        cursor: pointer;
-      }
+    input {
+      border: none;
+      outline: none;
+      margin-bottom: 14px;
+      width: 50vw;
+      padding: 14px 22px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    textarea {
+      border-radius: 12px;
+      width: 100%;
+      border: none;
+      outline: none;
+      margin-bottom: 14px;
     }
   }
-  // .social_icons {
-  //   &.stick_follow_icon {
-  //     position: absolute;
-  //     top: 50%;
-  //     left: 10%;
-  //     width: 8px;
-  //     background-color: black;
-  //   }
-  // }
 }
+// .social_icons {
+//   &.stick_follow_icon {
+//     position: absolute;
+//     top: 50%;
+//     left: 10%;
+//     width: 8px;
+//     background-color: black;
+//   }
+// }

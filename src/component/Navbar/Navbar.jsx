@@ -38,9 +38,9 @@ const Header = () => {
       </div>
       <div className="header-menu-icon">
         {showMenu ? (
-          <CgMenu onClick={handleToggle} size={30} />
+          <CgMenu onClick={handleToggle} size={35} />
         ) : (
-          <IoClose onClick={handleToggle} size={30} />
+          <IoClose onClick={handleToggle} size={35} />
         )}
       </div>
     </nav>
