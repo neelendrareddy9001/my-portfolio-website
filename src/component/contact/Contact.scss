@@ -2,34 +2,33 @@
 @import "../../styles/media\ .scss";
 
 .contact {
-  max-width: 80%;
-  background-color: skyblue;
+  max-width: 75%;
   margin: 8rem auto;
   border-radius: 15px;
-  min-height: 100vh;
+  min-height: 100%;
+  background: rgb(92, 212, 67);
+  background: linear-gradient(
+    90deg,
+    rgba(92, 212, 67, 1) 0%,
+    rgba(144, 223, 93, 0.7372198879551821) 100%
+  );
 
   .contact_title {
     text-align: center;
     font-weight: 700;
     padding: 1rem;
     font-weight: 32px;
-    background: #1dcf3a;
-
-    background: linear-gradient(to right, #1dcf3a 0%, #80cf97 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .contact_container {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    min-height: 75%;
     justify-content: space-around;
     padding: 2rem auto;
-    max-height: 100%;
-    gap: 1rem;
+    gap: 3rem;
 
-    @media screen and (max-width: 568px) {
+    @include tablet-m {
       flex-direction: column;
     }
 
@@ -38,6 +37,10 @@
       margin: 14px;
       border-radius: 14px;
       padding: 4rem auto;
+
+      @include mobile-m {
+        width: 100%;
+      }
 
       .contact_info {
         text-align: center;
@@ -52,33 +55,46 @@
       }
     }
   }
-  form {
-    width: 50%;
+  .contact_form {
+    width: 100%;
+    padding: 0px 18px;
 
     input {
       border: none;
       outline: none;
-      margin-bottom: 14px;
-      width: 50vw;
+      margin-bottom: 28px;
+      width: 100%;
       padding: 14px 22px;
       border-radius: 12px;
       cursor: pointer;
     }
+
     textarea {
       border-radius: 12px;
       width: 100%;
       border: none;
       outline: none;
-      margin-bottom: 14px;
+      margin-bottom: 28px;
+    }
+    textarea::placeholder {
+      padding: 4px 18px;
+    }
+    .btn {
+      padding: 12px 32px;
+      margin-bottom: 22px;
+      font-size: 22px;
+      letter-spacing: 2px;
+      font-weight: 400;
+      transform: translateX(50%);
+    }
+  }
+
+  .social_icons {
+    &.icons {
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      width: 8px;
     }
   }
 }
-// .social_icons {
-//   &.stick_follow_icon {
-//     position: absolute;
-//     top: 50%;
-//     left: 10%;
-//     width: 8px;
-//     background-color: black;
-//   }
-// }

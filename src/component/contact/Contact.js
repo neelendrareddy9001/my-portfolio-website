@@ -4,6 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import SocialIcons from "../SocialIcons";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -21,7 +22,6 @@ const Contact = () => {
             <article className="contact_option">
               <div className="contact_info">
                 <MdOutlineEmail size={35} className="social_icon" />
-                <h4>Email</h4>
                 <h5>neelendrareddy123@gmail.com</h5>
                 <a href="mailto:neelendrareddy123@gmail.com">
                   Send me a message
@@ -31,7 +31,7 @@ const Contact = () => {
             <article className="contact_option">
               <div className="contact_info">
                 <RiMessengerLine size={35} className="social_icon" />
-                <h4>Messenger</h4>
+
                 <h5>panditi.neelendrareddy</h5>
                 <a href="https://m.me/panditi.neelendrareddy.7">
                   Send a message
@@ -41,7 +41,7 @@ const Contact = () => {
             <article className="contact_option">
               <div className="contact_info">
                 <BsWhatsapp size={35} className="social_icon" />
-                <h4>WhatsApp</h4>
+
                 <h5>+48739437031</h5>
                 <a href="https://api.whatsapp.com/send?+48739437031">
                   Send a message
@@ -50,7 +50,7 @@ const Contact = () => {
             </article>
           </div>
           {/* End of Contact Optons */}
-          <div>
+          <div className="contact_form">
             <form action="">
               <input
                 rel="norefereer"
@@ -82,14 +82,14 @@ const Contact = () => {
                 onClick={handlerSubmit}
                 className="btn btn-primary"
               >
-                Sent a mesage
+                Send a mesage
               </button>
             </form>
           </div>
+          <div className="social_icons">
+            <SocialIcons className="icons" />
+          </div>
         </div>
-        {/* <div className="social_icons">
-          <SocialIcons className="icons" />
-        </div> */}
       </section>
     </>
   );
