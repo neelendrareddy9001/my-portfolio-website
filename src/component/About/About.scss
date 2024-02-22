@@ -7,15 +7,18 @@
   margin: 1% 3rem;
 
   h2 {
-    text-align: center;
+    text-align: start;
     font-size: 28px;
     margin: 2.5rem auto;
   }
 
   .about_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     @include tablet-l {
     }
-    background-color: black;
+
     color: white;
     display: flex;
 
@@ -25,6 +28,7 @@
 
     .about_img {
       margin-right: 1.25rem;
+      border-radius: 100%;
     }
 
     .about_data {

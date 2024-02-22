@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.scss";
-
+import { motion } from "framer-motion";
 import myImg from "../../assets/my_img.jpeg";
 import Info from "./Info";
 

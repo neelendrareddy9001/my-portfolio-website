@@ -1,2 +1,40 @@
-@keyframes identifier {
+@keyframes moveRight {
+  0% {
+    scale: 0;
+  }
+  20% {
+  }
+  45% {
+  }
+  75% {
+  }
+  100% {
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    scale: 0;
+  }
+  20% {
+  }
+  45% {
+  }
+  75% {
+  }
+  100% {
+  }
+}
+
+@keyframes moveDebounce {
+  0% {
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+  }
 }
