@@ -29,7 +29,12 @@
     gap: 3rem;
 
     @include tablet-m {
+      display: flex;
       flex-direction: column;
+    }
+
+    @include tablet-l {
+      flex-direction: row;
     }
 
     .contact_options .contact_option {

@@ -7,8 +7,12 @@ import SocialIcons from "../SocialIcons";
 import { motion } from "framer-motion";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    textarea: "",
+  });
+  console.log(formData);
 
   const handlerSubmit = (e) => {
     e.preventDefault();
@@ -54,25 +58,27 @@ const Contact = () => {
             <form action="">
               <input
                 rel="norefereer"
-                value={name}
+                value={formData.name}
                 type="text"
                 name="name"
                 placeholder="Your Full name"
                 required
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => setFormData(e.target.value)}
               />
               <input
                 rel="noreferer"
-                value={email}
+                value={formData.email}
                 type="email"
                 name="email"
                 placeholder="Your Email"
                 required
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => setFormData(e.target.value)}
               />
               <textarea
                 rel="noreferer"
                 name="message"
+                value={formData.textarea}
+                onClick={(e) => setFormData(e.target.value)}
                 rows="7"
                 placeholder="Your Message"
                 required
