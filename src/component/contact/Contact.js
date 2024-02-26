@@ -19,10 +19,14 @@ const Contact = () => {
   };
   return (
     <>
-      <section className="contact" id="contact">
+      <section className="contact section" id="contact">
         <h3 className="contact_title">Get In Touch</h3>
-        <div className="container contact_container">
-          <div className="contact_options">
+        <span className="contact_subtitl">Contact Me</span>
+
+        <div className="container contact_container grid">
+          <div className="contact_content">
+            <h3 className="contact_title">Talk to me</h3>
+
             <article className="contact_option">
               <div className="contact_info">
                 <MdOutlineEmail size={35} className="social_icon" />
@@ -53,36 +57,51 @@ const Contact = () => {
               </div>
             </article>
           </div>
-          {/* End of Contact Optons */}
-          <div className="contact_form">
-            <form action="">
-              <input
-                rel="norefereer"
-                value={formData.name}
-                type="text"
-                name="name"
-                placeholder="Your Full name"
-                required
-                onChange={(e) => setFormData(e.target.value)}
-              />
-              <input
-                rel="noreferer"
-                value={formData.email}
-                type="email"
-                name="email"
-                placeholder="Your Email"
-                required
-                onChange={(e) => setFormData(e.target.value)}
-              />
-              <textarea
-                rel="noreferer"
-                name="message"
-                value={formData.textarea}
-                onClick={(e) => setFormData(e.target.value)}
-                rows="7"
-                placeholder="Your Message"
-                required
-              />
+
+          <div className="contact_content">
+            <h3 className="contact_title">Write me your message</h3>
+
+            <form form="action" className="contact_form">
+              <div className="contact_from-div">
+                <label className="contact_form-tag">Name</label>
+                <input
+                  rel="norefereer"
+                  value={formData.name}
+                  type="text"
+                  name="name"
+                  className="contact_form-input"
+                  placeholder="Your Full name"
+                  required
+                  onChange={(e) => setFormData(e.target.value)}
+                />
+              </div>
+              <div className="contact_form-div">
+                <label className="contact_form-tag">Email</label>
+                <input
+                  rel="noreferer"
+                  value={formData.email}
+                  type="email"
+                  name="email"
+                  className="contact_form-input"
+                  placeholder="Your Email"
+                  required
+                  onChange={(e) => setFormData(e.target.value)}
+                />
+              </div>
+              <div className="contact_form-div">
+                <label className="contact_form-tag">Message</label>
+                <textarea
+                  rel="noreferer"
+                  name="message"
+                  value={formData.textarea}
+                  onChange={(e) => setFormData(e.target.value)}
+                  cols="30"
+                  rows="10"
+                  className="contact_form-input"
+                  placeholder="Your Message"
+                  required
+                />
+              </div>
               <button
                 type="submit"
                 onClick={handlerSubmit}
@@ -92,6 +111,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
+
           <div className="social_icons">
             <SocialIcons className="icons" />
           </div>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./navbar.scss";
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
@@ -6,9 +6,20 @@ import { IoClose } from "react-icons/io5";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
+  let menuRef = useRef();
+
   const handleToggle = (prev) => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    let handler = (e) => {
+      if (!menuRef.current.contains(e.target())) {
+        setShowMenu(false);
+        console.log(menuRef.current);
+      }
+    };
+  });
   return (
     <nav className="header">
       <div className="header-left">
@@ -17,7 +28,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="header-right">
-        <ul className={`${showMenu ? "menu-list" : "mb-menu"}`}>
+        <ul className={`${showMenu ? "menu-list" : "mb-menu"}`} ref={menuRef}>
           <Link to="/" style={{ textDecoration: "none" }}>
             <p className="menu-list-item active">Home</p>
           </Link>
