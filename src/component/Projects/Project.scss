@@ -1,4 +1,33 @@
-.contact {
-  width: 100%;
-  min-height: 100%;
+.projects {
+  .purple {
+    color: yellow;
+  }
+  p {
+    font-weight: 400;
+    padding-top: 0.75rem;
+    font-size: 18px;
+  }
+  .project-section {
+    position: relative !important;
+    padding-top: 50px !important;
+    padding-bottom: 30px !important;
+    // background-color: blue;
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .project-heading {
+      text-align: center;
+    }
+
+    .project-card {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+      height: auto !important;
+    }
+  }
 }
