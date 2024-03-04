@@ -21,14 +21,13 @@ const Contact = () => {
     <>
       <section className="contact section" id="contact">
         <h3 className="section_title">Get In Touch</h3>
-        <span className="section_subtitle">Contact Me</span>
 
         <div className="container contact_container grid">
           <div className="contact_content">
             <h3 className="contact_title">Talk to me</h3>
 
-            <article className="contact_option">
-              <div className="contact_info">
+            <article className="contact_options">
+              <div className="contact_option">
                 <MdOutlineEmail size={35} className="social_icon" />
                 <h5>neelendrareddy123@gmail.com</h5>
                 <a href="mailto:neelendrareddy123@gmail.com">
@@ -36,8 +35,8 @@ const Contact = () => {
                 </a>
               </div>
             </article>
-            <article className="contact_option">
-              <div className="contact_info">
+            <article className="contact_options">
+              <div className="contact_option">
                 <RiMessengerLine size={35} className="social_icon" />
 
                 <h5>panditi.neelendrareddy</h5>
@@ -46,8 +45,8 @@ const Contact = () => {
                 </a>
               </div>
             </article>
-            <article className="contact_option">
-              <div className="contact_info">
+            <article className="contact_options">
+              <div className="contact_option">
                 <BsWhatsapp size={35} className="social_icon" />
 
                 <h5>+48739437031</h5>
@@ -98,7 +97,7 @@ const Contact = () => {
                   cols="30"
                   rows="10"
                   className="contact_form-input"
-                  placeholder="Your Message"
+                  style={{ width: "100%", height: "150px" }}
                   required
                 />
               </div>

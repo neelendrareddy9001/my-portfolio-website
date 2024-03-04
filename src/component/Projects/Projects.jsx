@@ -24,6 +24,17 @@ const Projects = () => {
             <ProjectCard />
           </Col>
         </Row>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard />
+          </Col>
+        </Row>
       </Container>
     </section>
   );
