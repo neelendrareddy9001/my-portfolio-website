@@ -37,6 +37,9 @@
       display: flex;
       flex-direction: column;
     }
+    @include mobile-sm {
+      width: 75vw;
+    }
 
     @include tablet-l {
       flex-direction: row;
@@ -94,9 +97,10 @@
       }
     }
   }
+
   .contact_form {
     width: 100%;
-    padding: 0px 18px;
+    padding: 0px auto;
 
     input {
       border: none;
@@ -106,6 +110,13 @@
       padding: 14px 22px;
       border-radius: 12px;
       cursor: pointer;
+      font-size: 16px;
+    }
+
+    &-tag {
+      font-size: 22px;
+      font-weight: 600;
+      margin: 0.5rem auto;
     }
 
     textarea {
@@ -121,10 +132,15 @@
     .btn {
       padding: 12px 32px;
       margin: 22px auto;
+      display: grid;
+      place-content: center;
       font-size: 22px;
       letter-spacing: 2px;
       font-weight: 400;
-      transform: translateX(28%);
+
+      @include mobile-sm {
+        width: 70vw;
+      }
     }
   }
 

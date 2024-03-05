@@ -1,6 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+::-webkit-scrollbar {
+  width: 1.5em;
+  height: 1em;
+}
+::-webkit-scrollbar-track {
+  background: hsl(120, 63%, 65%);
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(120 100% 40% / 1);
+  border: 0.25em solid hsl(120 75% 50% / 1);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(120, 62%, 30%);
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
