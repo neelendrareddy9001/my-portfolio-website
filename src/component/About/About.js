@@ -11,7 +11,7 @@ const About = () => {
         <h2 className="about_title">About Me</h2>
         <div className="about_container grid">
           <img src={myImg} alt="" className="about_img" />
-          <div className="about_data-grid">
+          <div className="about_data grid">
             <div className="about_info">
               <p className="about_description">
                 I am Neeledra, web developer from warszwaa Poland. I have basic
