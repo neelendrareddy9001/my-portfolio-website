@@ -43,8 +43,12 @@
       border-radius: 25px;
       padding: 8px 22px;
       font-size: 1.25rem;
-
       font-weight: bolder;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
 
     .about-skills {
