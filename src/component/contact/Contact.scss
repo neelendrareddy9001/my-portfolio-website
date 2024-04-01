@@ -2,10 +2,9 @@
 @import "../../styles/media\ .scss";
 
 .contact {
-  max-width: 75%;
+  min-width: 1200px;
   margin: 8rem auto;
   border-radius: 15px;
-  min-height: calc(80px - 100vh);
   background: rgb(92, 212, 67);
   background: linear-gradient(
     90deg,
@@ -16,6 +15,7 @@
   @include mobile-m {
     min-width: 95%;
     padding: 0 auto;
+    max-width: 25vw;
   }
 
   .contact_title {
