@@ -10,6 +10,11 @@
   column-gap: 1.875rem;
   margin: 6rem auto;
   color: white;
+  display: flex;
+
+  @include mobile-m {
+    flex-direction: column;
+  }
   .about_data {
     padding: 1.875rem;
     background-color: green;
