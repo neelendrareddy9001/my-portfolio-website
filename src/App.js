@@ -1,7 +1,6 @@
 // import Styles
 import "./App.scss";
 import { Fragment } from "react";
-
 import Home from "../src/component/Home/Home";
 import About from "../src/component/About/About";
 import Project from "../src/component/Projects/Projects";
@@ -15,8 +14,7 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return (
     <Fragment>
-      <Navbar />
-
+      <Navbar/>
       <Routes>
         <Route path="/" Component={Home} exact />
         <Route path="/about" Component={About} exact />
