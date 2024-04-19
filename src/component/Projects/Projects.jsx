@@ -10,9 +10,6 @@ const Projects = () => {
         <h1 className="project-heading">
           Recent <strong className="purple">Works</strong>
         </h1>
-        <p style={{ color: "blue" }}>
-          Here are the recent projects that i had worked on
-        </p>
         <div className="projects-body">
           <ProjectCard />
         </div>

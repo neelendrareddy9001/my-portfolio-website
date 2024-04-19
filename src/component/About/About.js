@@ -18,7 +18,7 @@ const About = () => {
                 exprerience in web site design and buildingng and
                 customizationn, also I am good at javascript.
               </p>
-              <a href="" className="btn">
+              <a href="#value" className="btn">
                 Download CV
               </a>{" "}
             </div>
