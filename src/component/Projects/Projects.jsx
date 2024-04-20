@@ -1,5 +1,5 @@
 import React from "react";
-import "./Project.scss";
+import "./Project.scss"
 import ProjectCard from "./ProjectCard";
 import { Container } from "react-bootstrap";
 
