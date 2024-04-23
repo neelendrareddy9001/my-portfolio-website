@@ -1,14 +1,12 @@
 import React from "react";
 import "./home.scss";
-import ParticleBg from "../ParticleBg";
 import { Col, Container, Row } from "react-bootstrap";
 import Type from "../Navbar/Type";
 
 const Home = () => {
   return (
     <section className="section" id="home">
-      <Container className="home-section">
-        <ParticleBg />
+      <Container className="home-section">+
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header mx-auto">
