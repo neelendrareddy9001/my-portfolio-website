@@ -6,10 +6,10 @@ import Type from "../Navbar/Type";
 const Home = () => {
   return (
     <section className="section" id="home">
-      <Container className="home-section">+
+      <Container className="home-section">
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header mx-auto">
+            <Col md={10} className="home-header mx-auto">
               <h1 style={{ paddingBottom: "15px" }} className="heading">
                 Hi There{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -24,6 +24,10 @@ const Home = () => {
               </div>
             </Col>
           </Row>
+          <div class="btns">
+            <button>Know More</button>
+            <button>Download CV</button>
+          </div>
         </Container>
       </Container>
     </section>
