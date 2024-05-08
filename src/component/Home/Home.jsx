@@ -24,8 +24,7 @@ const Home = () => {
               </div>
             </Col>
           </Row>
-          <div class="btns">
-            <button>Know More</button>
+          <div class="btn">
             <button>Download CV</button>
           </div>
         </Container>

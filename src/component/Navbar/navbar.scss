@@ -6,10 +6,12 @@
   justify-content: space-between;
   min-height: 75px;
   align-items: center;
-  padding: 0 1.25rem;
-  
-
+  padding: 0 auto;
   background-color: #63e36a;
+  @include mobile {
+    width: 100%;
+  }
+
   @include mobile-s {
     width: 100%;
   }
@@ -27,10 +29,12 @@
       font-size: 34px;
       letter-spacing: 1.5px;
       color: #0a0f0a;
+      @include mobile {
+        visibility:hidden;
+      }
     }
   }
   &-right {
-    margin: 0 1.75rem;
     .menu-list {
       display: none;
       @include mobile-m {
@@ -62,6 +66,7 @@
   }
   &-menu-icon {
     display: block;
+    padding: 0 24px 0 0;
     @include tablet-m {
       display: block;
     }
