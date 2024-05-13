@@ -1,11 +1,14 @@
 import React from "react";
+import { ProgressBar } from "react-bootstrap";
 
 const Info = () => {
+  const now = 60;
   return (
     <div className="about_info">
       <div className="about_box">
         <h3 className="about_title">Experience</h3>
         <span className="about_subtitle">0 years of working</span>
+        
       </div>
       <div className="about_box">
         <h3 className="about_title">Completed</h3>

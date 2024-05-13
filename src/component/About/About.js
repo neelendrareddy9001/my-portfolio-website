@@ -1,14 +1,14 @@
 import React from "react";
 import "./About.scss";
 import { motion } from "framer-motion";
-import myImg from "../../assets/my_img.jpeg";
-import Info from "./Info";
+import myImg from "../../assets/images/my_img.jpeg";
+import { ProgressBar } from "react-bootstrap";
 
 const About = () => {
+  const now = 60;
   return (
     <>
       <section className="about container section" id="about">
-        <h2 className="about_title">About Me</h2>
         <div className="about_container grid">
           <img src={myImg} alt="" className="about_img" />
           <div className="about_data grid">
@@ -28,6 +28,8 @@ const About = () => {
                 <div className="skills_titles">
                   <h3 className="sills_name">Development</h3>
                   <span className="skills_number">90%</span>
+                  <ProgressBar now={now} label={`${now}%`} style={{color: 'red'}} />
+
                 </div>
                 <div className="skills_bar">
                   <span className="skills_percentage"></span>
