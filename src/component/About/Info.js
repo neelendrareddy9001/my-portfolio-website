@@ -1,8 +1,8 @@
 import React from "react";
-import { ProgressBar } from "react-bootstrap";
+
 
 const Info = () => {
-  const now = 60;
+  
   return (
     <div className="about_info">
       <div className="about_box">
