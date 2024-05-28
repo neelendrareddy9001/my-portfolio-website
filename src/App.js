@@ -1,5 +1,5 @@
 // import Styles
-import "./App.scss";
+
 import { Fragment } from "react";
 import Home from "../src/component/Home/Home";
 import About from "../src/component/About/About";
