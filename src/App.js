@@ -1,6 +1,4 @@
 // import Styles
-
-import { Fragment } from "react";
 import Home from "../src/component/Home/Home";
 import About from "../src/component/About/About";
 import Project from "../src/component/Projects/Projects";
@@ -13,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Fragment>
+    <>
       <Navbar/>
       <Routes>
         <Route path="/" Component={Home} exact />
@@ -22,7 +20,7 @@ function App() {
         <Route path="/cv" Component={Cv} exact />
         <Route path="/contact" Component={Contact} exact />
       </Routes>
-    </Fragment>
+    </>
   );
 }
 
