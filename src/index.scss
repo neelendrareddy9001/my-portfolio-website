@@ -72,7 +72,7 @@ body {
   font-weight: 400;
   text-transform: capitalize;
   text-decoration: none;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -89,68 +89,3 @@ body {
   margin: 0 32px;
 }
 
-/* typography */
-
-h1 {
-  font-size: var(--h1-fs);
-  line-height: 40px;
-  margin-bottom: 12px;
-  color: var(--text-color-heading);
-}
-
-h2 {
-  font-size: var(--h2-fs);
-  font-weight: bold;
-  color: var(--text-color-heading);
-}
-
-h3 {
-  font-size: var(--h3-fs);
-  margin-bottom: 12px;
-  color: var(--text-color-heading);
-
-  @media (max-width: 480px) {
-    font-size: 16px;
-  }
-}
-
-h4 {
-  font-size: var(--h4-fs);
-  margin-bottom: 3px;
-  color: #bcbcbc;
-}
-
-h5 {
-  font-size: var(--h5-fs);
-
-  &:hover {
-    color: var(--text-color-heading);
-    transition: 0.3s;
-  }
-}
-
-a {
-  color: var(--default-text-color);
-}
-
-.section {
-  padding: 60px 0 0 0;
-}
-
-img {
-  width: 100%;
-}
-
-// utility classes
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.w-100 {
-  width: 100%;
-}

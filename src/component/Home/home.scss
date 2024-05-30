@@ -1,9 +1,19 @@
-// @import "../../styles/globalStyle";
-// @import "../../styles/media\ .scss";
+@import "../../styles/globalStyle";
+@import "../../styles/media\ .scss";
 
+.section {
+  @include tablet-m {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  @include tablet-l {
+   width: 95%;
+   margin: 1rem auto;
+  }
+}
 .home-section {
-  max-width: 1280px;
-  min-width: 100vw;
+  width: 95%;
   background-color: lightseagreen;
   margin: 0 auto;
 

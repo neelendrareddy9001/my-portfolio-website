@@ -29,6 +29,10 @@
       font-size: 30px;
       letter-spacing: 1.5px;
       color: #0a0f0a;
+
+      @include mobile {
+        display: none;
+      }
     }
   }
   &-right {
