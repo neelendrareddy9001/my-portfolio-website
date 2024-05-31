@@ -2,7 +2,7 @@ import React from "react";
 import "./cv.scss";
 
 const cv = () => {
-  return <div className="cv">cv</div>;
+  return <section className="cv-container">cv</section>;
 };
 
 export default cv;
