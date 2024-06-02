@@ -3,6 +3,9 @@ import "./home.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import Type from "../Navbar/Type";
 import myImg from '../../assets/images/my_img.jpeg';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Home = () => {
   return (
@@ -35,7 +38,13 @@ const Home = () => {
             <button>Know More</button>
           </div>
         </Container>
-
+        <Container className="social-icons-container">
+            <div className="soci-icons">
+              <GitHubIcon className="icon" />
+              <LinkedInIcon className="icon"/>
+              <TwitterIcon className="icon"/>
+            </div>
+        </Container>
       </Container>
     </section>
   );

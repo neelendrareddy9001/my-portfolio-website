@@ -12,6 +12,10 @@
     rgba(144, 223, 93, 0.7372198879551821) 100%
   );
 
+  @include mobile {
+    width: 100%;
+  }
+
   @include mobile-m {
     min-width: 95%;
     padding: 0 auto;

@@ -14,7 +14,6 @@
 }
 .home-section {
   width: 95%;
-  background-color: lightseagreen;
   margin: 0 auto;
 
   .home-content {
@@ -78,4 +77,11 @@
   100% {
     transform: rotate(0deg);
   }
+}
+
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
