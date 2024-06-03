@@ -1,11 +1,12 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./home.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import Type from "../Navbar/Type";
-import myImg from '../../assets/images/my_img.jpeg';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import myImg from "../../assets/images/my_img.jpeg";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Home = () => {
   return (
@@ -29,7 +30,7 @@ const Home = () => {
             </Col>
             <Col md={4}>
               <div className="img-container">
-                <img src={myImg} alt="my_image"/>
+                <img src={myImg} alt="my_image" />
               </div>
             </Col>
           </Row>
@@ -39,11 +40,21 @@ const Home = () => {
           </div>
         </Container>
         <Container className="social-icons-container">
-            <div className="soci-icons">
-              <GitHubIcon className="icon" />
-              <LinkedInIcon className="icon"/>
-              <TwitterIcon className="icon"/>
-            </div>
+          <div className="social-icons">
+            <motion.div whileTap={{ scale: 0.9 }} whileHover={{
+              scale: 1.1,
+              backgroundColor: "#d1d5db",
+              color: "black"
+            }}>
+              <GitHubIcon className="icon"></GitHubIcon>
+            </motion.div>
+            <motion.div whileTap={{ scale: 0.9 }}>
+              <LinkedInIcon className="icon" />
+            </motion.div>
+            <motion.div whileTap={{ scale: 0.9 }}>
+              <TwitterIcon className="icon" />
+            </motion.div>
+          </div>
         </Container>
       </Container>
     </section>
