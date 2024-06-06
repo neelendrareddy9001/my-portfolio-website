@@ -8,6 +8,15 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
+const container = (delay) => ({
+  hidden: { x : -100, opacity: 0},
+  visible : {
+    x: 0,
+    opacity: 1,
+    transition: {duration: 0.5, delay: delay}
+  }
+})
+
 const Home = () => {
   return (
     <section className="section" id="home">
@@ -29,9 +38,13 @@ const Home = () => {
               </div>
             </Col>
             <Col md={4}>
-              <div className="img-container">
+              <motion.div
+              variants={container}
+              initial="hidden"
+              animate="visible"
+              className="img-container">
                 <img src={myImg} alt="my_image" />
-              </div>
+              </motion.div>
             </Col>
           </Row>
           <div class="btns">
