@@ -9,13 +9,13 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
 const container = (delay) => ({
-  hidden: { x : -100, opacity: 0},
-  visible : {
+  hidden: { x: -100, opacity: 0 },
+  visible: {
     x: 0,
     opacity: 1,
-    transition: {duration: 0.5, delay: delay}
-  }
-})
+    transition: { duration: 0.5, delay: delay },
+  },
+});
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
       <Container className="home-section">
         <Container className="home-content">
           <Row>
-            <Col md={8} className="home-header">
+            <Col className="home-header py-4">
               <h1 style={{ paddingBottom: "15px" }} className="heading">
                 Hi There{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
@@ -36,29 +36,33 @@ const Home = () => {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
+              <div class="btns">
+                <button>Download CV</button>
+                <button>Know More</button>
+              </div>
             </Col>
             <Col md={4}>
               <motion.div
-              variants={container}
-              initial="hidden"
-              animate="visible"
-              className="img-container">
-                <img src={myImg} alt="my_image" />
+                variants={container}
+                initial="hidden"
+                animate="visible"
+                className="img-container"
+              >
+                <img src={myImg} alt="my_image"/>
               </motion.div>
             </Col>
           </Row>
-          <div class="btns">
-            <button>Download CV</button>
-            <button>Know More</button>
-          </div>
         </Container>
         <Container className="social-icons-container">
           <div className="social-icons">
-            <motion.div whileTap={{ scale: 0.9 }} whileHover={{
-              scale: 1.1,
-              backgroundColor: "#d1d5db",
-              color: "black"
-            }}>
+            <motion.div
+              whileTap={{ scale: 0.9 }}
+              whileHover={{
+                scale: 1.1,
+                backgroundColor: "#d1d5db",
+                color: "black",
+              }}
+            >
               <GitHubIcon className="icon"></GitHubIcon>
             </motion.div>
             <motion.div whileTap={{ scale: 0.9 }}>
