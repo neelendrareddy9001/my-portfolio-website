@@ -16,7 +16,7 @@
 
 /* XS */
 @mixin mobile-m {
-  @media (min-width: 480px) {
+  @media (max-width: 480px) {
     @content;
   }
 }

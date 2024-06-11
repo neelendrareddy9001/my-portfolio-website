@@ -12,8 +12,13 @@
     rgba(144, 223, 93, 0.7372198879551821) 100%
   );
 
-  @include mobile {
-    width: 100%;
+  @include mobile-m {
+    width: 100%; 
+  }
+
+  @include tablet-m {
+    max-width: 80%;
+    margin: 0 20px;
   }
 
   @include mobile-m {
@@ -115,6 +120,10 @@
       border-radius: 12px;
       cursor: pointer;
       font-size: 16px;
+
+      &:focus {
+        border: 2px solid rgba(10, 185, 238, 0.78)
+      }
     }
 
     &-tag {

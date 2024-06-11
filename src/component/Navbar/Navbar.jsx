@@ -19,7 +19,9 @@ const Header = () => {
         console.log(menuRef.current);
       }
     };
+    
   });
+ 
   return (
     <nav className="header">
       <div className="header-left">
