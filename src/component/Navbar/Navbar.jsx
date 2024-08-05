@@ -32,20 +32,20 @@ const Header = () => {
       <div className="header-right">
         <ul className={`${showMenu ? "menu-list" : "mb-menu"}`} ref={menuRef}>
           <Link to="/" style={{ textDecoration: "none" }}>
-            <p className="menu-list-item active">Home</p>
+            <a className="menu-list-item active">Home</a>
           </Link>
           <Link to="/about" style={{ textDecoration: "none" }}>
-            <p className="menu-list-item">About</p>
+            <a className="menu-list-item" href="/about">About</a>
           </Link>
           <Link to="/cv" style={{ textDecoration: "none" }}>
-            <p className="menu-list-item">Cv</p>
+            <a className="menu-list-item">Cv</a>
           </Link>
           <Link to="/projects" style={{ textDecoration: "none" }}>
-            <p className="menu-list-item">Projects</p>
+            <a className="menu-list-item">Projects</a>
           </Link>
 
           <Link to="/contact" style={{ textDecoration: "none" }}>
-            <p className="menu-list-item">Contact</p>
+            <a className="menu-list-item">Contact</a>
           </Link>
         </ul>
       </div>

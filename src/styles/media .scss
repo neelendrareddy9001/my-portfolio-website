@@ -1,4 +1,3 @@
-// @import "./globalStyle.scss";
 
 /* XXs */
 @mixin mobile {
@@ -7,21 +6,15 @@
   }
 }
 
-/* x mobile */
-@mixin mobile-s {
-  @media (min-width: 360px) {
-    @content;
-  }
-}
 
 /* XS */
-@mixin mobile-m {
+@mixin mobile-sm {
   @media (max-width: 480px) {
     @content;
   }
 }
 
-@mixin mobile-sm {
+@mixin mobile-m {
   @media (max-width: 576px) {
     @content;
   }
@@ -41,80 +34,30 @@
   }
 }
 
-@mixin tab {
+@mixin tablet-l {
   @media (min-width: 840px) {
     @content;
   }
 }
 
-@mixin tablet-l {
+@mixin laptop {
   @media (min-width: 992px) {
     @content;
   }
 }
 
 /* LG */
-@mixin laptop {
+@mixin desktop {
   @media (max-width: 1200px) {
     @content;
   }
 }
 
 /* XL */
-@mixin desktop {
+@mixin desktop2x {
   @media (max-width: 1400px) {
     @content;
   }
 }
 
-// @mixin respond($screenType) {
-//   @if $screenType == mini-mobile {
-//     @media screen and (min-width: 0px) and (max-width: 320px) {
-//       @content;
-//     }
-//   } @else if $screenType == mobile {
-//     @media screen and (min-width: 320px) and (max-width: 480px) {
-//       @content;
-//     }
-//   } @else if $screenType == tablet {
-//     @media screen and (min-width: 480px) and (max-width: 768px) {
-//       @content;
-//     }
-//   } @else if $screenType == laptop {
-//     @media screen and (min-width: 768px) and (min-width: 992px) {
-//       @content;
-//     }
-//   } @else if $screenType == desktop {
-//     @media screen and (min-width: 992px) and (max-width: 1024px) {
-//       @content;
-//     }
-//   } @else if $screenType == screen-x {
-//     @media screen and (min-width: 1024px) and (max-width: 1200px) {
-//       @content;
-//     }
-//   } @else if $screenType == screen-xx {
-//     @media screen and (min-width: 1200px) and (max-width: 1280px) {
-//       @content;
-//     }
-//   } @else if $screenType == screen-xl {
-//     @media screen and (min-width: 1280px) and (max-width: 1536px) {
-//       @content;
-//     }
-//   }
-// }
 
-// @mixin respond-mb($screenType) {
-//   @if $screenType == mb-l {
-//     @media screen and (max-width: 576px) {
-//       @content;
-//     }
-//   } @else if $screenType == tab-l {
-//     @media screen and (max-width: 640px) {
-//       @content;
-//     }
-//   } @else if $screenType == tab-2 {
-//     @media screen and (max-width: 992px) {
-//       @content;
-//     }
-//   }
-// }
