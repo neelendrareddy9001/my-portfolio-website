@@ -1,5 +1,5 @@
 
-@import "../../styles/media\ .scss";
+
 
 .header {
   display: flex;
@@ -8,13 +8,14 @@
   align-items: center;
   padding: 0 2rem;
   background-color: #63e36a;
-  @include mobile {
-    width: 100%;
-  }
-  @include mobile-m {
-    padding: 0 2rem;
-  }
+  // @include mobile {
+  //   width: 100%;
+  // }
+  // @include mobile-m {
+  //   padding: 0 2rem;
+  // }
   @include tablet-s {
+    width: 100%;
     padding: 0 2.75rem;
   }
 
@@ -31,6 +32,9 @@
     }
   }
   &-right {
+    ul li {
+      text-decoration: none;
+    }
     .menu-list {
       display: none;
       @include mobile-m {
@@ -73,3 +77,5 @@
     z-index: 999
   }
 }
+
+
