@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./navbar.scss";
+
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { IoClose } from "react-icons/io5";
@@ -24,10 +24,10 @@ const Header = () => {
   });
 
   return (
-    <nav className="header">
+    <nav className="header d-flex justify-content-between p-3">
       <div className="header-left">
       
-          <p className="logo">Neelendrareddy</p>
+          <p className="logo fw-medium fs-4">Neelendrareddy</p>
       
       </div>
       <div className="header-right">
@@ -59,10 +59,11 @@ const Header = () => {
             </a>
          
         </ul>
+        
       </div>
       <div className="header-menu-icon">
         {showMenu ? (
-          <CgMenu onClick={handleToggle} size={35} />
+          <CgMenu onClick={handleToggle} size={23} />
         ) : (
           <IoClose onClick={handleToggle} size={35} />
         )}

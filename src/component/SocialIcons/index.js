@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss";
+
 import { FaGithub, FaTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { socialprofils } from "../../data";
 

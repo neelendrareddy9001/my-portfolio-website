@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./home.scss";
+
 import { Col, Container, Row } from "react-bootstrap";
 import Type from "../Navbar/Type";
 import myImg from "../../assets/images/my_img.jpeg";
@@ -19,7 +19,7 @@ const container = (delay) => ({
 
 const Home = () => {
   return (
-    <section className="section" id="home">
+    <section className="section p-5 bg-danger" id="home">
       <Container className="home-section">
         <Container className="home-content">
           <Row>
