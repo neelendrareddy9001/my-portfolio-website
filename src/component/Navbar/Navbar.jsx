@@ -24,7 +24,7 @@ const Header = () => {
   });
 
   return (
-    <nav className="header d-flex justify-content-between p-3">
+    <nav className="header d-flex justify-content-between p-3 bg-warning">
       <div className="header-left">
       
           <p className="logo fw-medium fs-4">Neelendrareddy</p>
@@ -65,7 +65,7 @@ const Header = () => {
         {showMenu ? (
           <CgMenu onClick={handleToggle} size={23} />
         ) : (
-          <IoClose onClick={handleToggle} size={35} />
+          <IoClose onClick={handleToggle} className="none" size={35} />
         )}
       </div>
     </nav>

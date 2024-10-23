@@ -15,7 +15,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <main className="container">
+    <main>
       <Navbar/>
       <Routes>
         <Route path="/" Component={Home} exact />

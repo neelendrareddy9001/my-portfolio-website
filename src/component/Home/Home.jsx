@@ -19,7 +19,7 @@ const container = (delay) => ({
 
 const Home = () => {
   return (
-    <section className="section p-5 bg-danger" id="home">
+    <section className="section p-5 bg-danger container" id="home">
       <Container className="home-section">
         <Container className="home-content">
           <Row>
