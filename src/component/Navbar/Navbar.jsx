@@ -24,14 +24,14 @@ const Header = () => {
   });
 
   return (
-    <nav className="header d-flex justify-content-between p-3 bg-warning">
+    <nav className="header d-flex justify-content-between p-3 bg-warning px-5 px-lg-4">
       <div className="header-left">
       
           <p className="logo fw-medium fs-4">Neelendrareddy</p>
       
       </div>
       <div className="header-right">
-        <ul className={`${showMenu ? "menu-list" : "mb-menu"}`} ref={menuRef}>
+        <ul className={`${showMenu ? "menu-list d-none d-md-flex" : "mb-menu"}`} ref={menuRef}>
           
             <a href="#home" className="menu-list-item active">
               Home
@@ -63,7 +63,7 @@ const Header = () => {
       </div>
       <div className="header-menu-icon">
         {showMenu ? (
-          <CgMenu onClick={handleToggle} size={23} />
+          <CgMenu onClick={handleToggle} size={23} className=' d-block d-md-none' />
         ) : (
           <IoClose onClick={handleToggle} className="none" size={35} />
         )}
