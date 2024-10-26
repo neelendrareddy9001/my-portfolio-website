@@ -2,3 +2,8 @@
     display: flex;
     gap: 8px;
 }
+
+ul li a{
+    display: flex;
+    gap: 8px !important;
+}

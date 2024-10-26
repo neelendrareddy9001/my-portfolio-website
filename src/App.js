@@ -15,7 +15,7 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <main>
+    <main className='w-100'>
       <Navbar/>
       <Routes>
         <Route path="/" Component={Home} exact />

@@ -31,7 +31,7 @@ const Header = () => {
       
       </div>
       <div className="header-right">
-        <ul className={`${showMenu ? "menu-list d-none d-md-flex" : "mb-menu"}`} ref={menuRef}>
+        <ul className={`${showMenu ? "menu-list" : "mb-menu"}`} ref={menuRef}>
           
             <a href="#home" className="menu-list-item active">
               Home
