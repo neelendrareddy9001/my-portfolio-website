@@ -24,7 +24,7 @@ const Header = () => {
   });
 
   return (
-    <nav className="header d-flex justify-content-between p-3 bg-warning px-5 px-lg-4">
+    <nav className="header d-flex justify-content-between p-3 bg-warning px-5">
       <div className="header-left">
       
           <p className="logo fw-medium fs-4">Neelendrareddy</p>
